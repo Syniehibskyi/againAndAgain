@@ -8,6 +8,8 @@ const PersonalMovieDb = {
     privat: false
 }
 
+// способ 0 - for
+
 for(let i = 0; i < 2; i++) {
     const a = prompt('Один из последних просмотренных фильмов?', ''),
           b = prompt('на сколько оцените его?', '');
@@ -30,3 +32,38 @@ if (PersonalMovieDb.count < 10) {
 } else {
     console.log('вы kinoman')
 }
+
+// let i = 0;
+
+// способ 1 -  while 
+
+// while (i < 2){
+//     i++
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//           b = prompt('на сколько оцените его?', '');
+         
+//           if (a != '' && b != '' && a != null && b != null && a.length < 50 && b.length < 50 ){
+//             PersonalMovieDb.movies[a] = b;
+//          } else {
+//              console.log('error');
+//              i--; 
+//          }     
+// }
+
+
+// Способ 2 - do while
+
+// let i = 0;
+
+// do {
+//     i++
+//         const a = prompt('Один из последних просмотренных фильмов?', ''),
+//               b = prompt('на сколько оцените его?', '');
+             
+//               if (a != '' && b != '' && a != null && b != null && a.length < 50 && b.length < 50 ){
+//                 PersonalMovieDb.movies[a] = b;
+//              } else {
+//                  console.log('error');
+//                  i--; 
+//              }     
+// } while ( i < 2);
